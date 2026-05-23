@@ -63,7 +63,7 @@ public class Puzzle {
                 Hmm, what is the value of `guessThis` when the out-of-bounds exception is thrown?
                 Replace the first line of `answer.txt` accordingly.
                 Hint: Use an exception breakpoint.""");
-        while (r.nextInt(100) != 10) {
+        while (r.nextInt(101) != 10) {
             guessThis += r.nextInt();
             s = LOTS_OF_STRINGS[r.nextInt(LOTS_OF_STRINGS.length + 1)];
         }
