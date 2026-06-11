@@ -1,3 +1,34 @@
 Manifest-Version: 1.0
 Main-Class: game2048rendering.Main
+Class-Path: ucb.jar algs4.jar jh61b.jar proj2a.jar asm-9.1.jar gson-2.10
+ .jar bcel-6.5.0.jar classmexer.jar jama-1.0.3.jar dom4j-2.1.3.jar jaxen
+ -1.2.0.jar truth-1.1.3.jar asm-tree-9.4.jar asm-util-9.4.jar jsr305-3.0
+ .2.jar junit-4.13.2.jar xchart-3.8.2.jar pdfbox-2.0.24.jar picocli-4.7.
+ 0.jar Saxon-HE-11.4.jar fontbox-2.0.24.jar asm-commons-9.4.jar graphics
+ 2d-0.33.jar httpcore5-5.1.3.jar slf4j-api-2.0.0.jar asm-analysis-9.4.ja
+ r log4j-api-2.19.0.jar opentest4j-1.2.0.jar spark-core-2.9.4.jar checks
+ tyle-10.5.0.jar hamcrest-core-1.3.jar httpclient5-5.1.3.jar log4j-core-
+ 2.19.0.jar xmlresolver-4.4.3.jar commons-codec-1.15.jar httpcore5-h2-5.
+ 1.3.jar reflections-0.10.2.jar slf4j-simple-2.0.6.jar checker-qual-3.13
+ .0.jar commons-logging-1.2.jar commons-text-1.10.0.jar failureaccess-1.
+ 0.1.jar javassist-3.29.2-GA.jar junit-jupiter-5.9.1.jar animated-gif-li
+ b-1.4.jar commons-lang3-3.12.0.jar guava-30.1.1-android.jar jcip-annota
+ tions-1.0.jar antlr4-runtime-4.11.1.jar apiguardian-api-1.1.2.jar Vecto
+ rGraphics2D-0.13.jar j2objc-annotations-1.3.jar xmlresolver-4.4.3-data.
+ jar commons-beanutils-1.9.4.jar javaparser-core-3.24.10.jar javax.servl
+ et-api-3.1.0.jar junit-jupiter-api-5.9.1.jar checker-compat-qual-2.5.5.
+ jar commons-collections-3.2.2.jar jetty-io-9.4.48.v20220622.jar jetty-x
+ ml-9.4.48.v20220622.jar junit-jupiter-engine-5.9.1.jar junit-jupiter-pa
+ rams-5.9.1.jar junit-vintage-engine-5.9.1.jar spotbugs-annotations-4.7.
+ 3.jar jetty-http-9.4.48.v20220622.jar jetty-util-9.4.48.v20220622.jar j
+ unit-platform-engine-1.9.1.jar auto-value-annotations-1.8.1.jar jh61b-s
+ ecureautograderrunner.jar junit-platform-commons-1.9.1.jar error_prone_
+ annotations-2.7.1.jar jetty-client-9.4.48.v20220622.jar jetty-server-9.
+ 4.48.v20220622.jar jetty-webapp-9.4.48.v20220622.jar junit-platform-lau
+ ncher-1.9.1.jar jetty-servlet-9.4.48.v20220622.jar websocket-api-9.4.48
+ .v20220622.jar jetty-security-9.4.48.v20220622.jar jetty-util-ajax-9.4.
+ 48.v20220622.jar websocket-client-9.4.48.v20220622.jar websocket-common
+ -9.4.48.v20220622.jar websocket-server-9.4.48.v20220622.jar websocket-s
+ ervlet-9.4.48.v20220622.jar listenablefuture-9999.0-empty-to-avoid-conf
+ lict-with-guava.jar
 
