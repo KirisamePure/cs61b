@@ -1,6 +1,7 @@
 package ngrams;
 
 import java.util.List;
+import java.util.ArrayList;
 import java.util.TreeMap;
 
 /**
@@ -30,15 +31,18 @@ public class TimeSeries extends TreeMap<Integer, Double> {
      */
     public TimeSeries(TimeSeries ts, int startYear, int endYear) {
         super();
-        // TODO: Fill in this constructor.
+        for (int year : ts.keySet()) {
+            if (year >= startYear && year <= endYear) {
+                put(year, ts.get(year));
+            }
+        }
     }
 
     /**
      * Returns all years for this TimeSeries (in any order).
      */
     public List<Integer> years() {
-        // TODO: Fill in this method.
-        return null;
+        return new ArrayList<>(keySet());
     }
 
     /**
@@ -46,8 +50,7 @@ public class TimeSeries extends TreeMap<Integer, Double> {
      * Must be in the same order as years().
      */
     public List<Double> data() {
-        // TODO: Fill in this method.
-        return null;
+        return new ArrayList<>(values());
     }
 
     /**
@@ -60,8 +63,12 @@ public class TimeSeries extends TreeMap<Integer, Double> {
      * should store the value from the TimeSeries that contains that year.
      */
     public TimeSeries plus(TimeSeries ts) {
-        // TODO: Fill in this method.
-        return null;
+        TimeSeries sum = new TimeSeries();
+        sum.putAll(this);
+        for (int year : ts.keySet()) {
+            sum.put(year, sum.getOrDefault(year, 0.0) + ts.get(year));
+        }
+        return sum;
     }
 
     /**
@@ -74,10 +81,14 @@ public class TimeSeries extends TreeMap<Integer, Double> {
      * If TS has a year that is not in this TimeSeries, ignore it.
      */
     public TimeSeries dividedBy(TimeSeries ts) {
-        // TODO: Fill in this method.
-        return null;
+        TimeSeries quotient = new TimeSeries();
+        for (int year : keySet()) {
+            if (!ts.containsKey(year)) {
+                throw new IllegalArgumentException("Missing year: " + year);
+            }
+            quotient.put(year, get(year) / ts.get(year));
+        }
+        return quotient;
     }
 
-    // TODO: Add any private helper methods.
-    // TODO: Remove all TODO comments before submitting.
 }
